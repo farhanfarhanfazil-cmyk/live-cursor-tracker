@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Cursor Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Users / Participants panel (top-left) -->
+    <div id="usersPanel">
+        <button id="usersToggle">Users</button>
+        <div id="usersList" class="hidden"></div>
+    </div>
+
+    <!-- Heading -->
+    <h2 id="mainHeading">Live Cursor Tracker</h2>
+
+    <div id="mePanel">
+    <span id="meColor" class="color-dot"></span>
+    <span id="meName"></span>
+</div>
+
+
+
+    
+    <!-- Consent Modal -->
+    <div id="consentModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to Live Cursor Tracker</h2>
+
+            <p>
+                By joining, you agree to share your cursor movements with other users
+                and view their cursor movements in real time.
+            </p>
+
+            <label>
+                <input type="checkbox" id="agreeCheckbox">
+                I agree to share my cursor movements
+            </label>
+
+            <input
+                type="text"
+                id="usernameInput"
+                placeholder="Enter your username"
+                disabled
+            />
+
+            <label>
+                Choose cursor color:
+                <input type="color" id="colorInput" value="#ff0000" disabled>
+            </label>
+
+            <button id="joinBtn" disabled>Join</button>
+        </div>
+    </div>
+    <div id="controls">
+    <button id="pauseBtn">Pause Sharing</button>
+    <button id="exitBtn">Exit</button>
+    <button id="themeToggle">Dark Mode</button>
+
+</div>
+
+</div>
+
+
+    <!-- Socket.IO client -->
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
