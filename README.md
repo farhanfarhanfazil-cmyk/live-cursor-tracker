@@ -69,19 +69,19 @@ Users can exit at any time, which resets their session and removes them from the
 
 ## 🏗️ Project Structure
 
-live-cursor-tracker/
-│
-├── client/
-│ ├── index.html # UI, consent modal, controls
-│ ├── style.css # Styling, layout, dark mode
-│ └── script.js # Client-side logic
-│
-├── server/
-│ ├── index.js # Express + Socket.IO server
-│ └── package.json
-│
-├── .gitignore
-└── README.md
+live-cursor-tracker/ \n
+│\n
+├── client/\n
+│ ├── index.html # UI, consent modal, controls\n
+│ ├── style.css # Styling, layout, dark mode\n
+│ └── script.js # Client-side logic\n
+│\n
+├── server/\n
+│ ├── index.js # Express + Socket.IO server\n
+│ └── package.json\n
+│\n
+├── .gitignore\n
+└── README.md\n
 
 
 ---
